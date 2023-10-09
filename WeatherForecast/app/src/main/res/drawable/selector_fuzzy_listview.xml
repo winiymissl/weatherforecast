@@ -1,0 +1,15 @@
+<!-- custom_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认状态 -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- 选中状态，这里使用一个自定义形状作为背景 -->
+    <item android:state_selected="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 自定义形状属性，例如圆角 -->
+            <corners android:radius="10dp" />
+            <!-- 自定义背景颜色 -->
+            <solid android:color="#808080" />
+        </shape>
+    </item>
+</selector>
